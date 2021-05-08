@@ -1,0 +1,28 @@
+#botao {
+    margin: 15px;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: #20005c;
+}
+
+#botao:hover {
+    color: white;
+    background-color: #3f00b4;
+}
+
+.titulo {
+    margin: 100px auto;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    
+}
+
+.formulario {
+    background-color: rgb(255, 251, 192);
+    
+    border: 2px solid black;
+    padding: 10px;
+}
+
