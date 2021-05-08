@@ -1,12 +1,10 @@
-$(document).ready(function () {
-   $("#salgado").change(function () { 
-       var escolhaSalgado = $("#salgado option:selected").val();
-       })
+$(document).ready(function () {  
+    var escolhaSalgado = $('#salgado').val();
 
     $("#botao").click(function(){
         alert(escolhaSalgado);
-    })
-       
+    });
+        
    });
 
 
