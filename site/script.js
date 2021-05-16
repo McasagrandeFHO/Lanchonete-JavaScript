@@ -17,20 +17,32 @@ $(document).ready(function () {
         
 
         $valorBebida = $("#bebida").val();
-        if($valorSalgado == "coca") {
-            $valorSalgado = 5.00;
+        if($valorBebida == "coca") {
+            $valorBebida = 5.00;
         }
-        else if($valorSalgado == "pepsi") {
-            $valorSalgado = 5.0;
+        else if($valorBebida == "pepsi") {
+            $valorBebida = 5.0;
         }
-        else if($valorSalgado == "guarana") {
-            $valorSalgado = 5.50;
+        else if($valorBebida == "guarana") {
+            $valorBebida = 5.50;
         }    
-        else if($valorSalgado == "suco") {
-            $valorSalgado = 4.00;
-        }    
+        else if($valorBebida == "suco") {
+            $valorBebida = 4.00;
+        } 
+        
+        $valorTotal = $valorSalgado + $valorBebida;
 
+        if($("#flexRadioDefault1").is(":checked")){
+            $desconto = $valorTotal * 0.05;
+            $valorTotal = $valorTotal - $desconto;
+        }
+        
+        if($("#checkViagem").is(":checked")) {
+            $valorTotal = $valorTotal + 1.50;
+        }
 
+        alert("Total da compra: R$" + $valorTotal);
+        
     });
         
    });
